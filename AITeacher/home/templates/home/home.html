@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap template -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <title>{% block title %}AITeacher{% endblock %}</title>
+    {% block head %}{% endblock %}
+  </head>
+  <body>
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link mt-2" href="#">AI-Teacher</a>
+          </li>
+        </ul>
+        <button class="nav-link mr-5 mt-2 btn-primary">Sign up/ Sign in</button>
+      </div>
+    </div>
+
+    {% block content %}
+    <main
+      class="d-flex justify-content-center align-items-center"
+      style="height: 80vh; margin-left: 10%; margin-right: 10%"
+    >
+      <div class="text-center">
+        <h1 class="display-2">
+          Boost Your Programming Knowledge With AITeacher
+        </h1>
+      </div>
+    </main>
+    <section class="bg-primary text-white py-5 m-0">
+      <div class="container">
+        <h2 class="text-center">New Section</h2>
+        <p class="text-center">This is a new section with a blue background.</p>
+      </div>
+    </section>
+    {% endblock %}
+
+    <footer class="bg-light text-center text-lg-start p-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Thank You</h5>
+            <p>Our hackathon project for Headstarter AI!</p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Our team:</h5>
+            <ul class="list-unstyled mb-0">
+              <li>
+                <p>
+                  Sergio:
+                  <a
+                    href="https://www.linkedin.com/in/sergiozavala1/"
+                    target="_blank"
+                    class="text-primary"
+                    >linkedin</a
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  Alexis:
+                  <a
+                    href="https://www.linkedin.com/in/alexis-guzman-cs9/"
+                    target="_blank"
+                    class="text-primary"
+                    >linkedin</a
+                  >
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="text-center p-3 bg-dark text-white">© 2023 AITeacher</div>
+    </footer>
+  </body>
+</html>
