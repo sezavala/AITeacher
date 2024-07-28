@@ -10,11 +10,31 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <style>
+      .grid-item {
+        background-color: #feb618; /* Light background color */
+        border: 1px solid #dee2e6; /* Light border */
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5em;
+        border-radius: 5px; /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        transition: transform 0.2s, background-color 0.2s; /* Smooth transition for hover effect */
+        margin: 10px; /* Add margin to create space between boxes */
+      }
 
-    <title>{% block title %}AITeacher{% endblock %}</title>
+      .grid-item:hover {
+        transform: scale(1.05); /* Slightly enlarge on hover */
+        background-color: #feda8a; /* Change background color on hover */
+      }
+    </style>
+    <title>AITeacher</title>
     {% block head %}{% endblock %}
   </head>
   <body>
+    {% block header %}
     <div class="container">
       <div class="d-flex justify-content-between align-items-center">
         <ul class="nav nav-pills">
@@ -25,8 +45,7 @@
         <button class="nav-link mr-5 mt-2 btn-primary">Sign up/ Sign in</button>
       </div>
     </div>
-
-    {% block content %}
+    {% endblock %} {% block content %}
     <main
       class="d-flex justify-content-center align-items-center"
       style="height: 80vh; margin-left: 10%; margin-right: 10%"
@@ -39,14 +58,64 @@
     </main>
     <section class="bg-primary text-white py-5 m-0">
       <div class="container">
-        <h2 class="text-center">New Section</h2>
-        <p class="text-center">This is a new section with a blue background.</p>
+        <h2 class="text-center display-2 mt-5">Select a Technology!</h2>
+      </div>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-4 p-2">
+            <div
+              class="grid-item"
+              onclick="location.href='{% url 'quiz:quiz_page' quiz_name='Javascirpt' %}'"
+            >
+              Javascript
+            </div>
+          </div>
+          <div class="col-4 p-2">
+            <div
+              class="grid-item"
+              onclick="location.href='{% url 'quiz:quiz_page' quiz_name='Java' %}'"
+            >
+              Java
+            </div>
+          </div>
+          <div class="col-4 p-2">
+            <div
+              class="grid-item"
+              onclick="location.href='{% url 'quiz:quiz_page' quiz_name='Python' %}'"
+            >
+              Python
+            </div>
+          </div>
+          <div class="col-4 p-2">
+            <div
+              class="grid-item"
+              onclick="location.href='{% url 'quiz:quiz_page' quiz_name='C' %}'"
+            >
+              C
+            </div>
+          </div>
+          <div class="col-4 p-2">
+            <div
+              class="grid-item"
+              onclick="location.href='{% url 'quiz:quiz_page' quiz_name='SQL' %}'"
+            >
+              SQL
+            </div>
+          </div>
+          <div class="col-4 p-2">
+            <div
+              class="grid-item"
+              onclick="location.href='{% url 'quiz:quiz_page' quiz_name='GoLang' %}'"
+            >
+              GoLang
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     {% endblock %}
-
     <footer class="bg-light text-center text-lg-start">
-      <div class="container p-4">
+      <div class="container pt-4">
         <div class="row">
           <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
             <h5 class="text-uppercase">Thank You</h5>
