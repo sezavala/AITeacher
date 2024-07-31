@@ -1,4 +1,5 @@
 # AITeacher
+<p>Description: AITeacher is an advanced educational platform designed to provide interactive and adaptive learning experiences. The platform leverages modern web technologies, cloud services, and best practices in software engineering to deliver a robust and scalable solution for online education.</p>
 ![Untitled-ezgif com-video-to-gif-converter (1)](https://github.com/user-attachments/assets/2fed81e6-ef01-4c5b-af91-2b98e8094327)
 <h1>Plans for AITeacher:</h1>
 <ul>
