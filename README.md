@@ -1,5 +1,5 @@
 # AITeacher
-<p>Description: AITeacher is an advanced educational platform designed to provide interactive and adaptive learning experiences. The platform leverages modern web technologies, cloud services, and best practices in software engineering to deliver a robust and scalable solution for online education.</p>
+<p>Description: AITeacher is an advanced educational platform designed to provide interactive and adaptive learning experiences. The platform leverages modern web technologies using DJango, the OpenAI API to generate questions and it is a scalable solution for online education.</p>
 
 <ul>
   <p>Back-end</p>
